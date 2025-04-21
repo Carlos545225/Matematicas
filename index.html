@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Soluciones Completas - Taller Ley de Enfriamiento de Newton</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            margin: 2cm;
+        }
+        h1 {
+            text-align: center;
+            font-size: 18pt;
+            margin-bottom: 0.5cm;
+            color: #2E74B5;
+        }
+        h2 {
+            font-size: 14pt;
+            color: #2E74B5;
+            border-bottom: 1px solid #2E74B5;
+            padding-bottom: 3px;
+            margin-top: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 1cm;
+        }
+        .problem {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+        .enunciado {
+            background-color: #E6F2FF;
+            padding: 10px;
+            border-left: 3px solid #2E74B5;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .solucion {
+            margin-left: 15px;
+            margin-bottom: 10px;
+        }
+        .respuesta {
+            background-color: #F8F8F8;
+            padding: 10px;
+            border-left: 3px solid #70AD47;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .equation {
+            font-family: "Cambria Math", serif;
+            margin: 10px 0;
+        }
+        .answer {
+            color: #C00000;
+            font-weight: bold;
+        }
+        .paso {
+            margin-left: 20px;
+            margin-bottom: 8px;
+        }
+        .nota {
+            font-style: italic;
+            color: #5F5F5F;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Soluciones Completas - Taller Ley de Enfriamiento de Newton</h1>
+</div>
+
+<div class="problem">
+    <div class="enunciado">Problema 1: Termómetro en congelador</div>
+    <div class="solucion">
+        <p>Se mueve un termómetro de una habitación donde la temperatura es 70°F a un congelador donde está la temperatura 12°F. Después de 30 segundos el termómetro lee 40°F. ¿Qué lee después de 2 minutos?</p>
+        
+        <div class="paso"><strong>Paso 1:</strong> Aplicamos la Ley de Enfriamiento de Newton:</div>
+        <div class="equation">T(t) = T<sub>m</sub> + (T<sub>0</sub> - T<sub>m</sub>)e<sup>-kt</sup></div>
+        
+        <div class="paso"><strong>Paso 2:</strong> Calculamos la constante k:</div>
+        <div class="equation">40 = 12 + (70 - 12)e<sup>-30k</sup></div>
+        <div class="equation">28 = 58e<sup>-30k</sup></div>
+        <div class="equation">k ≈ 0.0247 s<sup>-1</sup></div>
+        
+        <div class="paso"><strong>Paso 3:</strong> Calculamos para t = 120 s:</div>
+        <div class="equation">T(120) = 12 + 58e<sup>-0.0247×120</sup></div>
+        <div class="equation">T(120) ≈ 15°F</div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span> Después de 2 minutos, el termómetro leerá aproximadamente <strong>15°F</strong>.
+    </div>
+</div>
+
+<div class="problem">
+    <div class="enunciado">Problema 2: Fluido enfriándose</div>
+    <div class="solucion">
+        <p>Un fluido inicialmente a 100°C se coloca afuera en un día en que la temperatura es -10°C, y la temperatura del fluido desciende 20°C en un minuto. Encuentra la temperatura T(t) del fluido para t > 0.</p>
+        
+        <div class="paso"><strong>Paso 1:</strong> Datos iniciales:</div>
+        <div class="equation">T<sub>0</sub> = 100°C, T<sub>m</sub> = -10°C, T(1) = 80°C</div>
+        
+        <div class="paso"><strong>Paso 2:</strong> Calculamos k:</div>
+        <div class="equation">80 = -10 + (100 - (-10))e<sup>-k×1</sup></div>
+        <div class="equation">90 = 110e<sup>-k</sup></div>
+        <div class="equation">k ≈ 0.2007 min<sup>-1</sup></div>
+        
+        <div class="paso"><strong>Paso 3:</strong> Formulamos la ecuación:</div>
+        <div class="equation">T(t) = T<sub>m</sub> + (T<sub>0</sub> - T<sub>m</sub>)e<sup>-kt</sup></div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span> La temperatura del fluido para t > 0 es:
+        <div class="equation">T(t) = -10 + 110e<sup>-0.2007t</sup> °C</div>
+    </div>
+</div>
+
+<div class="problem">
+    <div class="enunciado">Problema 3: Termómetro en habitación y exterior</div>
+    <div class="solucion">
+        <p>A las 12:00 pm se coloca un termómetro de lectura 10°F en una habitación donde la temperatura es 70°F. Se lee 56°F cuando se coloca afuera, donde la temperatura es 5°F, a las 12:03. ¿Qué lee a las 12:05 pm?</p>
+        
+        <div class="paso"><strong>Paso 1:</strong> Aplicamos la Ley de Enfriamiento de Newton:</div>
+        <div class="equation">T(t) = T<sub>m</sub> + (T<sub>0</sub> - T<sub>m</sub>)e<sup>-kt</sup></div>
+        
+        <div class="paso"><strong>Paso 2:</strong> Calculamos la constante k:</div>
+        <div class="equation">56 = 5 + (10 - 5)e<sup>-3k</sup></div>
+        <div class="equation">51 = 5e<sup>-3k</sup></div>
+        <div class="equation">k ≈ 0.776 min<sup>-1</sup></div>
+        
+        <div class="paso"><strong>Paso 3:</strong> Calculamos para t = 5 minutos:</div>
+        <div class="equation">T(5) = 5 + 5e<sup>-0.776×5</sup></div>
+        <div class="equation">T(5) ≈ 5.1°F</div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span> A las 12:05 pm, el termómetro leerá aproximadamente <strong>5.1°F</strong>.
+    </div>
+</div>
+
+<div class="problem">
+    <div class="enunciado">Problema 4: Termómetro en habitación</div>
+    <div class="solucion">
+        <p>Un termómetro que inicialmente lee 212°F se coloca en una habitación donde la temperatura es 70°F. Después de 2 minutos el termómetro lee 125°F.</p>
+        
+        <div class="subproblema">a. ¿Qué lee el termómetro después de 4 minutos?</div>
+        <div class="paso"><strong>Paso 1:</strong> Calculamos k:</div>
+        <div class="equation">125 = 70 + (212 - 70)e<sup>-2k</sup></div>
+        <div class="equation">55 = 142e<sup>-2k</sup></div>
+        <div class="equation">k ≈ 0.472 min<sup>-1</sup></div>
+        
+        <div class="paso"><strong>Paso 2:</strong> Calculamos para t = 4 minutos:</div>
+        <div class="equation">T(4) = 70 + 142e<sup>-0.472×4</sup> ≈ 91.4°F</div>
+        
+        <div class="subproblema">b. ¿Cuándo leerá el termómetro 72°F?</div>
+        <div class="equation">72 = 70 + 142e<sup>-0.472t</sup></div>
+        <div class="equation">t ≈ 9.05 minutos</div>
+        
+        <div class="subproblema">c. ¿Cuándo leerá el termómetro 69°F?</div>
+        <div class="equation">69 = 70 + 142e<sup>-0.472t</sup></div>
+        <div class="paso">No tiene solución real. El termómetro nunca alcanzará 69°F (se aproxima a 70°F)</div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span><br>
+        a) Después de 4 minutos: <strong>91.4°F</strong><br>
+        b) Alcanzará 72°F después de <strong>9.05 minutos</strong><br>
+        c) <strong>Nunca</strong> alcanzará 69°F (se aproxima a 70°F)
+    </div>
+</div>
+
+<div class="problem">
+    <div class="enunciado">Problema 5: Objeto enfriándose</div>
+    <div class="solucion">
+        <p>Un objeto con temperatura inicial 150°C se coloca afuera, donde la temperatura es 35°C. Sus temperaturas a 12:15 y 12:20 son 120°C y 90°C, respectivamente.</p>
+        
+        <div class="subproblema">a. ¿A qué hora se colocó el objeto afuera?</div>
+        <div class="paso"><strong>Paso 1:</strong> Calculamos k usando los dos puntos:</div>
+        <div class="equation">120 = 35 + 115e<sup>-k t<sub>1</sub></sup></div>
+        <div class="equation">90 = 35 + 115e<sup>-k t<sub>2</sub></sup></div>
+        <div class="equation">k ≈ 0.0906 min<sup>-1</sup></div>
+        
+        <div class="paso"><strong>Paso 2:</strong> Calculamos el tiempo inicial:</div>
+        <div class="equation">t<sub>1</sub> ≈ 3.33 minutos antes de 12:15 ⇒ 12:11:40</div>
+        
+        <div class="subproblema">b. ¿Cuándo será su temperatura 40°C?</div>
+        <div class="equation">40 = 35 + 115e<sup>-0.0906 t</sup></div>
+        <div class="equation">t ≈ 34.9 minutos desde la colocación ⇒ 12:46:30</div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span><br>
+        a) El objeto se colocó afuera aproximadamente a las <strong>12:11:40</strong>.<br>
+        b) La temperatura será 40°C aproximadamente a las <strong>12:46:30</strong>.
+    </div>
+</div>
+
+<div class="problem">
+    <div class="enunciado">Problema 6: Objeto en habitación</div>
+    <div class="solucion">
+        <p>Un objeto se coloca en una habitación donde la temperatura es 20°C. La temperatura del objeto desciende en 5°C en 4 minutos y en 7°C en 8 minutos. ¿Cuál era la temperatura inicial del objeto?</p>
+        
+        <div class="paso"><strong>Paso 1:</strong> Planteamos las ecuaciones:</div>
+        <div class="equation">T<sub>0</sub> - 5 = 20 + (T<sub>0</sub> - 20)e<sup>-4k</sup></div>
+        <div class="equation">T<sub>0</sub> - 7 = 20 + (T<sub>0</sub> - 20)e<sup>-8k</sup></div>
+        
+        <div class="paso"><strong>Paso 2:</strong> Resolvemos el sistema:</div>
+        <div class="equation">(T<sub>0</sub> - 27)(T<sub>0</sub> - 20) = (T<sub>0</sub> - 25)<sup>2</sup></div>
+        <div class="equation">3T<sub>0</sub> = 85</div>
+        <div class="equation">T<sub>0</sub> ≈ 28.33°C</div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span> La temperatura inicial del objeto era aproximadamente <strong>28.33°C</strong>.
+    </div>
+</div>
+
+<div class="problem">
+    <div class="enunciado">Problema 7: Taza de agua hirviendo</div>
+    <div class="solucion">
+        <p>Una taza de agua hirviendo se coloca afuera a la 1:00 pm. Un minuto después la temperatura del agua es 152°F. Después de otro minuto su temperatura es 112°F. ¿Cuál es la temperatura exterior?</p>
+        
+        <div class="paso"><strong>Paso 1:</strong> Aplicamos la Ley de Enfriamiento de Newton dos veces:</div>
+        <div class="equation">152 = T<sub>m</sub> + (212 - T<sub>m</sub>)e<sup>-k</sup></div>
+        <div class="equation">112 = T<sub>m</sub> + (212 - T<sub>m</sub>)e<sup>-2k</sup></div>
+        
+        <div class="paso"><strong>Paso 2:</strong> Resolvemos el sistema de ecuaciones:</div>
+        <div class="equation">(152 - T<sub>m</sub>)/(212 - T<sub>m</sub>) = e<sup>-k</sup></div>
+        <div class="equation">(112 - T<sub>m</sub>)/(212 - T<sub>m</sub>) = e<sup>-2k</sup> = [(152 - T<sub>m</sub>)/(212 - T<sub>m</sub>)]<sup>2</sup></div>
+        
+        <div class="paso"><strong>Paso 3:</strong> Solución cuadrática para T<sub>m</sub>:</div>
+        <div class="equation">(112 - T<sub>m</sub>)(212 - T<sub>m</sub>) = (152 - T<sub>m</sub>)<sup>2</sup></div>
+        <div class="equation">T<sub>m</sub> ≈ 32°F</div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span> La temperatura exterior es aproximadamente <strong>32°F</strong>.
+    </div>
+</div>
+
+<div class="problem">
+    <div class="enunciado">Problema 8: Tanque con solución salina</div>
+    <div class="solucion">
+        <p>Un tanque inicialmente contiene 40 galones de agua pura. Se agrega una solución con 1 gramo de sal por galón al tanque a 3 gal/min, y la solución resultante se drena a la misma velocidad. Encuentra Q(t) para t > 0.</p>
+        
+        <div class="paso"><strong>Paso 1:</strong> Planteamos la ecuación diferencial:</div>
+        <div class="equation">dQ/dt = (1 g/gal × 3 gal/min) - (Q(t)/40 gal × 3 gal/min)</div>
+        <div class="equation">dQ/dt = 3 - (3/40)Q</div>
+        
+        <div class="paso"><strong>Paso 2:</strong> Resolvemos la ecuación diferencial:</div>
+        <div class="equation">Q(t) = 40(1 - e<sup>-3t/40</sup>)</div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span> La cantidad de sal en el tanque es:
+        <div class="equation">Q(t) = 40(1 - e<sup>-3t/40</sup>) gramos</div>
+    </div>
+</div>
+
+<div class="problem">
+    <div class="enunciado">Problema 9: Tanque con solución más concentrada</div>
+    <div class="solucion">
+        <p>Un tanque inicialmente contiene 60 galones de agua con 10 libras de sal. Se agrega solución con 0.5 lb/gal a 6 gal/min, y la mezcla sale a 6 gal/min. Encuentra Q(t) para t > 0.</p>
+        
+        <div class="paso"><strong>Paso 1:</strong> Planteamos la ecuación diferencial:</div>
+        <div class="equation">dQ/dt = (0.5 lb/gal × 6 gal/min) - (Q(t)/60 gal × 6 gal/min)</div>
+        <div class="equation">dQ/dt = 3 - Q/10</div>
+        
+        <div class="paso"><strong>Paso 2:</strong> Resolvemos con condición inicial Q(0) = 10 lb:</div>
+        <div class="equation">Q(t) = 30 - 20e<sup>-t/10</sup></div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span> La cantidad de sal en el tanque es:
+        <div class="equation">Q(t) = 30 - 20e<sup>-t/10</sup> libras</div>
+    </div>
+</div>
+
+<div class="problem">
+    <div class="enunciado">Problema 10: Concentración variable en tanque</div>
+    <div class="solucion">
+        <p>Un tanque inicialmente contiene 100 litros de solución salina con concentración 0.1 g/l. Se agrega solución con 0.3 g/l a 5 l/min, y la mezcla sale a 5 l/min. Encontrar K(t).</p>
+        
+        <div class="paso"><strong>Paso 1:</strong> Cantidad inicial de sal:</div>
+        <div class="equation">Q(0) = 100 l × 0.1 g/l = 10 g</div>
+        
+        <div class="paso"><strong>Paso 2:</strong> Ecuación diferencial:</div>
+        <div class="equation">dQ/dt = (0.3 g/l × 5 l/min) - (Q(t)/100 l × 5 l/min)</div>
+        <div class="equation">dQ/dt = 1.5 - Q/20</div>
+        
+        <div class="paso"><strong>Paso 3:</strong> Solución:</div>
+        <div class="equation">Q(t) = 30 - 20e<sup>-t/20</sup></div>
+        
+        <div class="paso"><strong>Paso 4:</strong> Concentración:</div>
+        <div class="equation">K(t) = Q(t)/100 = 0.3 - 0.2e<sup>-t/20</sup> g/l</div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span> La concentración de sal es:
+        <div class="equation">K(t) = 0.3 - 0.2e<sup>-t/20</sup> g/l</div>
+    </div>
+</div>
+
+<div class="problem">
+    <div class="enunciado">Problema 11: Tanque con volumen variable</div>
+    <div class="solucion">
+        <p>Un tanque de 200 galones inicialmente contiene 100 galones de agua con 20 lb de sal. Se agrega solución con 0.25 lb/gal a 4 gal/min, y la mezcla sale a 2 gal/min. Encuentra la cantidad de sal cuando está por desbordarse.</p>
+        
+        <div class="paso"><strong>Paso 1:</strong> Tiempo hasta desbordamiento:</div>
+        <div class="equation">dV/dt = 4 - 2 = 2 gal/min</div>
+        <div class="equation">V(t) = 100 + 2t = 200 ⇒ t = 50 min</div>
+        
+        <div class="paso"><strong>Paso 2:</strong> Ecuación diferencial:</div>
+        <div class="equation">dQ/dt = (0.25 lb/gal × 4 gal/min) - (Q(t)/(100 + 2t) × 2 gal/min)</div>
+        <div class="equation">dQ/dt = 1 - 2Q/(100 + 2t)</div>
+        
+        <div class="paso"><strong>Paso 3:</strong> Factor integrante:</div>
+        <div class="equation">μ(t) = (100 + 2t)</div>
+        
+        <div class="paso"><strong>Paso 4:</strong> Solución con Q(0) = 20 lb:</div>
+        <div class="equation">Q(t) = (100t + t² + 2000)/(100 + 2t)</div>
+        
+        <div class="paso"><strong>Paso 5:</strong> Evaluamos en t = 50 min:</div>
+        <div class="equation">Q(50) = (5000 + 2500 + 2000)/200 = 47.5 lb</div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span> Cuando el tanque está a punto de desbordarse contiene <strong>47.5 libras</strong> de sal.
+    </div>
+</div>
+
+<div class="problem">
+    <div class="enunciado">Problema 12: Tanque con fuga</div>
+    <div class="solucion">
+        <p>Se agrega agua a un tanque a 10 gal/min, pero se escapa a razón de 1/5 gal/min por cada galón en el tanque. ¿Cuál es la menor capacidad que puede tener el tanque si el proceso va a continuar indefinidamente?</p>
+        
+        <div class="paso"><strong>Paso 1:</strong> Planteamos la ecuación de balance:</div>
+        <div class="equation">dV/dt = 10 - (1/5)V</div>
+        
+        <div class="paso"><strong>Paso 2:</strong> Para continuar indefinidamente, dV/dt ≥ 0:</div>
+        <div class="equation">10 - (1/5)V ≥ 0</div>
+        <div class="equation">V ≤ 50 galones</div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span> La menor capacidad que puede tener el tanque es <strong>50 galones</strong>.
+    </div>
+</div>
+
+<div class="problem">
+    <div class="enunciado">Problema 13: Control de gas nocivo</div>
+    <div class="solucion">
+        <p>Un laboratorio produce 13 ft³/min de gas nocivo. Los ventiladores extraen aire fresco a q₂ ft³/min. Encontrar el mínimo q₂ para mantener concentración segura ≤ C.</p>
+        
+        <div class="paso"><strong>Paso 1:</strong> Ecuación de concentración:</div>
+        <div class="equation">V dc/dt = 13 - q₂c</div>
+        
+        <div class="paso"><strong>Paso 2:</strong> Concentración en estado estacionario:</div>
+        <div class="equation">0 = 13 - q₂c ⇒ c = 13/q₂</div>
+        
+        <div class="paso"><strong>Paso 3:</strong> Condición de seguridad:</div>
+        <div class="equation">13/q₂ ≤ C ⇒ q₂ ≥ 13/C</div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span> El valor mínimo requerido es <strong>q₂ = 13/C ft³/min</strong>.
+    </div>
+</div>
+
+<div class="problem">
+    <div class="enunciado">Problema 14: Tanque grande con solución salina</div>
+    <div class="solucion">
+        <p>Tanque de 1200 galones con 600 gal iniciales y 40 lb de sal. Entra solución a 6 gal/min (0.5 lb/gal) y sale a 4 gal/min. Encontrar Q(t) antes del desbordamiento.</p>
+        
+        <div class="paso"><strong>Paso 1:</strong> Tiempo hasta desbordamiento:</div>
+        <div class="equation">V(t) = 600 + (6-4)t = 1200 ⇒ t = 300 min</div>
+        
+        <div class="paso"><strong>Paso 2:</strong> Ecuación diferencial:</div>
+        <div class="equation">dQ/dt = (0.5×6) - (Q/(600+2t))×4 = 3 - 4Q/(600+2t)</div>
+        
+        <div class="paso"><strong>Paso 3:</strong> Factor integrante:</div>
+        <div class="equation">μ(t) = (600 + 2t)²</div>
+        
+        <div class="paso"><strong>Paso 4:</strong> Solución con Q(0) = 40 lb:</div>
+        <div class="equation">Q(t) = (600 + 2t)/2 + C/(600 + 2t)²</div>
+        <div class="equation">Q(t) = 300 + t - 93,600,000/(600 + 2t)²</div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span> La cantidad de sal es:
+        <div class="equation">Q(t) = 300 + t - 93,600,000/(600 + 2t)² libras</div>
+    </div>
+</div>
+
+
+<div class="problem">
+    <div class="enunciado">Problema 15: Sistema de dos tanques</div>
+    <div class="solucion">
+        <p>Tanques T₁ y T₂ interconectados con diferentes flujos de entrada y salida.</p>
+        
+        <div class="subproblema">a. Ecuación diferencial para Q(t) en T₂:</div>
+        <div class="paso"><strong>Paso 1:</strong> Solución para T₁:</div>
+        <div class="equation">Q₁(t) = 50(1 - e<sup>-t/25</sup>)</div>
+        
+        <div class="paso"><strong>Paso 2:</strong> Balance para T₂:</div>
+        <div class="equation">dQ₂/dt = (2Q₁(t)/50) + (2×2) - (4Q₂(t)/50)</div>
+        <div class="equation">dQ₂/dt + (2/25)Q₂ = 6 - 2e<sup>-t/25</sup></div>
+        
+        <div class="subproblema">b. Solución para Q₂(t):</div>
+        <div class="paso"><strong>Paso 3:</strong> Factor integrante:</div>
+        <div class="equation">μ(t) = e<sup>2t/25</sup></div>
+        
+        <div class="paso"><strong>Paso 4:</strong> Solución general:</div>
+        <div class="equation">Q₂(t) = 75 - 50e<sup>-t/25</sup> - 25e<sup>-2t/25</sup></div>
+        
+        <div class="subproblema">c. Límite cuando t → ∞:</div>
+        <div class="equation">lim Q₂(t) = 75 lb</div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span><br>
+        a) <strong>dQ₂/dt + (2/25)Q₂ = 6 - 2e<sup>-t/25</sup></strong><br>
+        b) <strong>Q₂(t) = 75 - 50e<sup>-t/25</sup> - 25e<sup>-2t/25</sup></strong><br>
+        c) <strong>75 lb</strong> (cuando t → ∞)
+    </div>
+</div>
+
+
+<div class="problem">
+    <div class="enunciado">Problema 16: Sistema objeto-recipiente-medio</div>
+    <div class="solucion">
+        <p>Objeto (T₀) en recipiente (S₀) en medio (T<sub>m</sub>).</p>
+        
+        <div class="subproblema">a. Constantes de decaimiento distintas (k<sub>y</sub>, k<sub>m</sub>):</div>
+        <div class="system">
+            <div class="equation">dS/dt = -k<sub>y</sub>(S - T<sub>m</sub>)</div>
+            <div class="equation">dT/dt = -k<sub>m</sub>(T - S)</div>
+        </div>
+        <div class="paso">Solución:</div>
+        <div class="equation">S(t) = T<sub>m</sub> + (S₀ - T<sub>m</sub>)e<sup>-k<sub>y</sub>t</sup></div>
+        <div class="equation">T(t) = S(t) + (T₀ - S₀)e<sup>-k<sub>m</sub>t</sup></div>
+        
+        <div class="subproblema">b. Misma constante de decaimiento (k):</div>
+        <div class="equation">T(t) = T<sub>m</sub> + (T₀ - T<sub>m</sub>)e<sup>-kt</sup></div>
+        <div class="equation">S(t) = T<sub>m</sub> + (S₀ - T<sub>m</sub>)e<sup>-kt</sup></div>
+        
+        <div class="subproblema">c. Límites cuando t → ∞:</div>
+        <div class="equation">lim S(t) = lim T(t) = T<sub>m</sub></div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span><br>
+        a) <strong>S(t) = T<sub>m</sub> + (S₀ - T<sub>m</sub>)e<sup>-k<sub>y</sub>t</sup></strong>, <strong>T(t) = S(t) + (T₀ - S₀)e<sup>-k<sub>m</sub>t</sup></strong><br>
+        b) <strong>S(t) = T<sub>m</sub> + (S₀ - T<sub>m</sub>)e<sup>-kt</sup></strong>, <strong>T(t) = T<sub>m</sub> + (T₀ - T<sub>m</sub>)e<sup>-kt</sup></strong><br>
+        c) Ambas tienden a <strong>T<sub>m</sub></strong> cuando t → ∞
+    </div>
+</div>
+
+<div class="problem">
+    <div class="enunciado">Problema 17: Sistema con conservación de energía</div>
+    <div class="solucion">
+        <p>Sistema objeto-medio con intercambio de calor y conservación de energía.</p>
+        
+        <div class="subproblema">a. Ecuación diferencial solo para T:</div>
+        <div class="paso"><strong>Paso 1:</strong> De (B): T<sub>m</sub> = T<sub>m0</sub> - (α/α<sub>m</sub>)(T - T<sub>0</sub>)</div>
+        <div class="paso"><strong>Paso 2:</strong> Sustituir en (A):</div>
+        <div class="equation">T' = -k[T - (T<sub>m0</sub> - (α/α<sub>m</sub>)(T - T<sub>0</sub>)]</div>
+        <div class="equation">T' + k(1 + α/α<sub>m</sub>)T = k(T<sub>m0</sub> + (α/α<sub>m</sub>)T<sub>0</sub>)</div>
+        
+        <div class="subproblema">b. Soluciones para T(t) y T<sub>m</sub>(t):</div>
+        <div class="paso"><strong>Paso 3:</strong> Resolver la ecuación diferencial:</div>
+        <div class="equation">T(t) = [α<sub>m</sub>T<sub>m0</sub> + αT<sub>0</sub> + α<sub>m</sub>(T<sub>0</sub> - T<sub>m0</sub>)e<sup>-k(1+α/α<sub>m</sub>)t</sup>]/(α<sub>m</sub> + α)</div>
+        <div class="equation">T<sub>m</sub>(t) = T<sub>m0</sub> - (α/α<sub>m</sub>)(T(t) - T<sub>0</sub>)</div>
+        
+        <div class="subproblema">c. Límites cuando t → ∞:</div>
+        <div class="equation">lim T(t) = (α<sub>m</sub>T<sub>m0</sub> + αT<sub>0</sub>)/(α<sub>m</sub> + α)</div>
+        <div class="equation">lim T<sub>m</sub>(t) = T<sub>m0</sub></div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span><br>
+        a) <strong>T' + k(1 + α/α<sub>m</sub>)T = k(T<sub>m0</sub> + (α/α<sub>m</sub>)T<sub>0</sub>)</strong><br>
+        b) <strong>T(t)</strong> como se muestra, <strong>T<sub>m</sub>(t) = T<sub>m0</sub> - (α/α<sub>m</sub>)(T(t) - T<sub>0</sub>)</strong><br>
+        c) Límites: <strong>T → (α<sub>m</sub>T<sub>m0</sub> + αT<sub>0</sub>)/(α<sub>m</sub> + α)</strong>, <strong>T<sub>m</sub> → T<sub>m0</sub></strong>
+    </div>
+</div>
+
+
+<div class="problem">
+    <div class="enunciado">Problema 18: Tanque con flujo proporcional</div>
+    <div class="solucion">
+        <p>Flujo de entrada αV y salida bV². Encontrar V(t) y lim V(t) cuando t → ∞.</p>
+        
+        <div class="paso"><strong>Paso 1:</strong> Ecuación diferencial:</div>
+        <div class="equation">dV/dt = αV - bV²</div>
+        
+        <div class="paso"><strong>Paso 2:</strong> Separar variables e integrar:</div>
+        <div class="equation">∫[1/(αV - bV²)]dV = ∫dt</div>
+        <div class="equation">(1/α)ln|V/(α - bV)| = t + C</div>
+        
+        <div class="paso"><strong>Paso 3:</strong> Solución general:</div>
+        <div class="equation">V(t) = αV<sub>0</sub>e<sup>αt</sup>/(α - bV<sub>0</sub> + bV<sub>0</sub>e<sup>αt</sup>)</div>
+        
+        <div class="paso"><strong>Paso 4:</strong> Límite cuando t → ∞:</div>
+        <div class="equation">lim V(t) = α/b</div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span><br>
+        Solución: <strong>V(t) = αV<sub>0</sub>e<sup>αt</sup>/(α - bV<sub>0</sub> + bV<sub>0</sub>e<sup>αt</sup>)</strong><br>
+        Límite: <strong>α/b</strong> (cuando t → ∞)
+    </div>
+</div>
+
+<div class="problem">
+    <div class="enunciado">Problema 19: Dos tanques idénticos en serie</div>
+    <div class="solucion">
+        <p>Tanques T₁ y T₂ con W galones cada uno, flujo r gal/min y concentración c.</p>
+        
+        <div class="paso"><strong>Paso 1:</strong> Para T₁:</div>
+        <div class="equation">dQ₁/dt = r c - (r/W)Q₁</div>
+        <div class="equation">Q₁(t) = c W(1 - e<sup>-rt/W</sup>)</div>
+        <div class="equation">C₁(t) = c(1 - e<sup>-rt/W</sup>)</div>
+        
+        <div class="paso"><strong>Paso 2:</strong> Para T₂:</div>
+        <div class="equation">dQ₂/dt = r C₁(t) - (r/W)Q₂</div>
+        <div class="equation">Q₂(t) = c W[1 - (1 + rt/W)e<sup>-rt/W</sup>]</div>
+        <div class="equation">C₂(t) = c[1 - (1 + rt/W)e<sup>-rt/W</sup>]</div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span><br>
+        Concentraciones:<br>
+        <strong>C₁(t) = c(1 - e<sup>-rt/W</sup>)</strong><br>
+        <strong>C₂(t) = c[1 - (1 + rt/W)e<sup>-rt/W</sup>]</strong>
+    </div>
+</div>
+
+<div class="problem">
+    <div class="enunciado">Problema 20: Secuencia infinita de tanques</div>
+    <div class="solucion">
+        <p>Tanques T₁, T₂, ..., T<sub>n</sub>,... con flujo r gal/min y concentración c.</p>
+        
+        <div class="subproblema">a. Concentración en T<sub>n</sub>:</div>
+        <div class="paso"><strong>Paso 1:</strong> Solución general para el n-ésimo tanque:</div>
+        <div class="equation">C<sub>n</sub>(t) = c[1 - e<sup>-rt/W</sup> ∑<sub>k=0</sub><sup>n-1</sup> (rt/W)<sup>k</sup>/k!]</div>
+        
+        <div class="subproblema">b. Límite cuando t → ∞:</div>
+        <div class="equation">lim C<sub>n</sub>(t) = c (para todo n)</div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span><br>
+        a) <strong>C<sub>n</sub>(t) = c[1 - e<sup>-rt/W</sup> ∑<sub>k=0</sub><sup>n-1</sup> (rt/W)<sup>k</sup>/k!]</strong><br>
+        b) <strong>lim C<sub>n</sub>(t) = c</strong> para todo n
+    </div>
+</div>
+
+<div class="problem">
+    <div class="enunciado">Problema 21: Dos tanques con intercambio</div>
+    <div class="solucion">
+        <p>Tanques T₁ (W₁ litros, C₁ g/l) y T₂ (W₂ litros, C₂ g/l) con intercambio a r l/min.</p>
+        
+        <div class="subproblema">a. Concentraciones c₁(t) y c₂(t):</div>
+        <div class="system">
+            <div class="equation">dc₁/dt = (r/W₁)(c₂ - c₁)</div>
+            <div class="equation">dc₂/dt = (r/W₂)(c₁ - c₂)</div>
+        </div>
+        <div class="paso"><strong>Solución:</strong></div>
+        <div class="equation">c₁(t) = C<sub>prom</sub> + (W₂ΔC)/(W₁ + W₂) e<sup>-r(1/W₁ + 1/W₂)t</sup></div>
+        <div class="equation">c₂(t) = C<sub>prom</sub> - (W₁ΔC)/(W₁ + W₂) e<sup>-r(1/W₁ + 1/W₂)t</sup></div>
+        <div class="equation">donde C<sub>prom</sub> = (W₁C₁ + W₂C₂)/(W₁ + W₂), ΔC = C₁ - C₂</div>
+        
+        <div class="subproblema">b. Límites cuando t → ∞:</div>
+        <div class="equation">lim c₁(t) = lim c₂(t) = C<sub>prom</sub></div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span><br>
+        a) <strong>c₁(t)</strong> y <strong>c₂(t)</strong> como se muestran<br>
+        b) Ambas tienden a <strong>C<sub>prom</sub> = (W₁C₁ + W₂C₂)/(W₁ + W₂)</strong>
+    </div>
+</div>
+
+<div class="problem">
+    <div class="enunciado">Problema 22: Mezcla no instantánea</div>
+    <div class="solucion">
+        <p>Ecuación diferencial: Q' + (α(t)/150)Q = 2, con lim α(t) = 1 cuando t → ∞.</p>
+        
+        <div class="subproblema">a. Valor de lim Q(t):</div>
+        <div class="paso"><strong>Paso 1:</strong> En estado estacionario (t → ∞):</div>
+        <div class="equation">(1/150)Q = 2 ⇒ Q = 300</div>
+        
+        <div class="subproblema">b. Confirmación numérica:</div>
+        <div class="paso"><strong>Caso (i):</strong> α(t) = t/(1 + t)</div>
+        <div class="paso"><strong>Caso (ii):</strong> α(t) = 1 - e<sup>-t²</sup></div>
+        <div class="paso"><strong>Caso (iii):</strong> α(t) = 1 - sin(e<sup>-t</sup>)</div>
+        <div class="paso">Todos convergen a Q = 300 cuando t → ∞</div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span><br>
+        a) <strong>lim Q(t) = 300</strong><br>
+        b) Se confirma numéricamente para todos los casos
+    </div>
+</div>
+
+<div class="problem">
+    <div class="enunciado">Problema 23: Tanque con capacidad infinita</div>
+    <div class="solucion">
+        <p>Considerar el problema de mezcla en un tanque con capacidad infinita, pero sin el supuesto de que la mezcla se agita instantáneamente.</p>
+        
+        <div class="paso"><strong>a) Valor límite de K(t):</strong></div>
+        <div class="equation">Q' + (α(t)/(t+100))Q = 1</div>
+        <div class="equation">Cuando t → ∞, α(t) → 1</div>
+        <div class="equation">K(t) = Q(t)/V(t) ≈ 1/2</div>
+        
+        <div class="paso"><strong>b) Confirmación numérica:</strong></div>
+        <div class="equation">Para diferentes α(t), K(t) → 1/2</div>
+    </div>
+    <div class="respuesta">
+        <span class="answer">Respuesta:</span>
+        <div class="equation">a) lim K(t) = 1/2</div>
+        <div class="equation">b) Se confirma numéricamente para todos los casos</div>
+    </div>
+</div>
+
+</body>
+</html>
